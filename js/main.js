@@ -20,7 +20,7 @@ for(let i = 0; i < scrollLinks.length; i++){
     e.preventDefault();
 
     const id = e.target.getAttribute('href');
-    
+
     document.querySelector(id).scrollIntoView({
       behavior: 'smooth',
       block: 'start'
@@ -57,7 +57,7 @@ for(let i = 0; i < scrollLinks.length; i++){
     mobile: false,
   })
 
-  
+
   burger.addEventListener('click', onActiveMobileMenu);
 
   activeLink();
@@ -79,7 +79,7 @@ for(let i = 0; i < scrollLinks.length; i++){
   function onActiveMobileMenu (){
     document.querySelector('.burger').classList.toggle("active");
     document.querySelector('.header__menu').classList.toggle("active");
-    document.querySelector('body').classList.toggle("lock"); 
+    document.querySelector('body').classList.toggle("lock");
   }
 
 
@@ -98,7 +98,7 @@ for(let i = 0; i < scrollLinks.length; i++){
           item.attachEvent("onmousewheel", scrollHorizontally);
         }
       })
-    }     
+    }
     e.preventDefault();
   }
 
@@ -141,11 +141,11 @@ $('.jobs-rev__questions-container').slick({
     }
   });
 
-  $('.reset-slider').click(function(){
-    $('.jobs-rev__questions-container').slick('goTo', 0);
-  })
+  // $('.reset-slider').click(function(){
+  //   $('.jobs-rev__questions-container').slick('goTo', 0);
+  // })
 
-  //Табы 
+  //Табы
 
   if(tabNav.length > 0){
     for(let i = 0; i < tabNav.length; i++){
@@ -153,7 +153,7 @@ $('.jobs-rev__questions-container').slick({
         e.preventDefault();
 
         let tabNavAttr = e.currentTarget.dataset.tab;
-        
+
         for(let j = 0; j < tabNav.length; j++){
           let contentTabAttr = tabContent[j].dataset.tabContent;
 
@@ -215,5 +215,18 @@ $('.jobs-rev__questions-container').slick({
     }
 
   }
+
+  // Горизонтальный скролл
+
+  var sly = new Sly($('.reviews__body'),{
+    horizontal: 1,
+    itemNav: 'basic',
+    mouseDragging: 1,
+    touchDragging: 1,
+    startAt: 0,
+    speed: 300,
+})
+
+sly.init();
 
 })
