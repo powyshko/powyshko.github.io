@@ -3289,6 +3289,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     min-width: 264px;
+    margin: 0px 0px 0px 16px;
   }
   .reviews__img {
     -webkit-box-ordinal-group: 3;
