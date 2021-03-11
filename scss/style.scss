@@ -553,7 +553,7 @@ body{
     }
 
     &__link {
-      
+
 
       &::after{
         content: url('../img/bread_mob.png');
@@ -670,6 +670,7 @@ body{
 .title {
   font-size: 70px;
   font-weight: bold;
+  line-height: 84px;
 
   @media (max-width: 1024px) {
     font-size: 48px;
@@ -727,15 +728,15 @@ body{
     &:hover::after{
       left: 13px;
     }
-  }  
+  }
 
   @media (max-width: 768px){
     a{
-    
+
       &:hover::after{
         left: 0;
       }
-    }  
+    }
   }
 
   @media (max-width: 619px){
@@ -746,7 +747,7 @@ body{
     a{
       color: #013874;
       position: relative;
-  
+
       &::after{
         content: url('../img/Arrow_mob.png');
         position: absolute;
@@ -754,13 +755,13 @@ body{
         bottom: -12px;
         transition: all 0.4s;
       }
-    }  
+    }
   }
 }
 
 
 .promo {
-  
+
   &__block {
     width: 330px;
 
@@ -804,22 +805,22 @@ body{
 
       &__block{
         width: 290px;
-        
+
         &:hover{
           .promo__item-title{
             text-decoration: none;
-    
+
             &::before{
               content: url('');
             }
           }
         }
       }
-  
+
       &__item-body{
         flex-direction: column;
       }
-  
+
       &__date{
         order: 2;
         margin: 6px 0px 0px 0px;
@@ -827,7 +828,7 @@ body{
         height: 30px;
         font-size: 14px;
       }
-  
+
       &__item-title {
         font-size: 22px;
         font-weight: bold;
@@ -837,37 +838,37 @@ body{
         line-height: 17px;
       }
     }
-  
+
     @media (max-width: 619px){
       &__block{
         width: 220px;
       }
-  
+
       &__date{
         font-size: 14px;
         width: 73px;
         height: 30px;
       }
-  
+
       &__item-title {
         font-size: 14px;
       }
     }
-  
+
     @media (max-width: 479px){
       &__block{
         width: 150px;
-      } 
+      }
     }
-  
+
     @media (max-width: 339px){
       &__block{
         width: 132px;
-      } 
+      }
     }
   }
 
-  
+
 
 .block-img-mini {
   width: 200px;
@@ -1106,7 +1107,7 @@ body{
       color: #000000;
       position: relative;
       display: inline-block;
-  
+
       &::after{
         content: '';
         display: block;
@@ -1147,7 +1148,7 @@ body{
     }
   }
 
-  @media (max-width: 767px){
+  @media (max-width: 768px){
     &__title {
       font-size: 30px;
       line-height: 36px;
@@ -1158,7 +1159,7 @@ body{
         color: #000000;
         position: relative;
         display: inline-block;
-  
+
         &::after{
           content: '';
           display: block;
@@ -1205,7 +1206,7 @@ body{
   &__logo {
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;    
+    justify-content: flex-start;
   }
 
   &__logo-img-merc{
@@ -1307,7 +1308,7 @@ body{
       top: 0;
       right: 0;
     }
-    
+
     &:hover{
       text-decoration: underline;
     }
@@ -1412,7 +1413,7 @@ body{
     }
 
     &__link-services {
-  
+
       &::after{
         content: '';
       }
@@ -1514,7 +1515,7 @@ body{
       &:hover{
         .promotions__item-title{
           text-decoration: none;
-  
+
           &::before{
             content: '';
           }
@@ -1617,7 +1618,7 @@ body{
   }
 
   @media (max-width: 575px){
-    
+
     #video {
       height: 200px;
     }
@@ -1641,7 +1642,7 @@ body{
 }
 
 
-.teams {  
+.teams {
   padding: 118px 0px 132px 0px;
 
   &__body {
@@ -1729,7 +1730,7 @@ body{
 
   @media (max-width: 1024px){
     &__item-title{
-      
+
       h1{
         font-size: 70px;
       }
@@ -1744,7 +1745,7 @@ body{
     }
 
     &__item-title{
-      
+
       h1{
         font-size: 30px;
         line-height: 36px;
@@ -1858,7 +1859,7 @@ body{
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
-    background: #D02213; 
+    background: #D02213;
     margin: 0px 0px 47px 0px;
   }
 
@@ -2057,14 +2058,14 @@ body{
 .sidebar {
 
   &__block {
-    margin: 0px 0px 47px 0px;
+    margin: 0px 0px 32px 0px;
     font-size: 22px;
   }
 
   &__title {
     font-size: 32px;
     font-weight: bold;
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 30px 0px;
   }
 
   &__subtitle {
@@ -2083,15 +2084,15 @@ body{
   &__link {
     color: #000000;
     display: block;
-    margin: 0px 0px 15px 0px;
     transition: all 0.4s;
+    height: 46px;
 
     &:last-child{
       margin: 0;
     }
 
     &:hover{
-      font-size: 28px;
+      font-size: 23px;
     }
   }
 
@@ -2114,10 +2115,13 @@ body{
 
     &__title{
       font-size: 18px;
+      height: 33px;
+      margin: 0px 0px 5px 0px;
     }
 
     &__link{
       margin: 0px 0px 10px 0px;
+      height: auto;
 
       &:hover{
         font-size: 14px;
@@ -2183,7 +2187,7 @@ body{
       padding: 0px 29px 0px 89px;
     }
   }
-  
+
   td{
     padding: 34px 0px 41px 29px;
     font-weight: normal;
@@ -2202,14 +2206,14 @@ body{
   @media (max-width: 962px){
 
     th{
-      
+
       &:last-child{
         padding: 0px 29px 0px 29px;
       }
     }
 
     td{
-      
+
       &:last-child{
         padding: 0px 29px 0px 29px;
       }
@@ -2299,7 +2303,7 @@ body{
   @media (max-width: 768px){
 
     padding: 0px 0px 81px 0px;
-    
+
     &__title {
       font-size: 30px;
     }
@@ -2452,7 +2456,8 @@ body{
   &__subtitle-mini {
     font-weight: bold;
     font-size: 32px;
-    margin: 30px 0px 30px 0px;
+    height: 61px;
+    margin: 60px 0px 8px 0px;
   }
 
   &__list {
@@ -2477,7 +2482,8 @@ body{
   }
 
   &__table-title {
-    margin: 36px 0px 30px 0px;
+    height: 117px;
+    margin: 36px 0px 0px 0px;
   }
 
   &__download{
@@ -2541,6 +2547,7 @@ body{
       margin: 64px 0px 19px 0px;
       font-size: 18px;
       line-height: 20px;
+      height: auto;
     }
 
     &__list-item{
@@ -2548,13 +2555,14 @@ body{
       line-height: 20px;
       margin: 0px 0px 20px 0px;
     }
-    
+
     &__img{
       margin: 34px 0px 34px 0px;
     }
 
     &__table-title{
       margin: 58px 0px 15px 0px;
+      height: auto;
     }
 
     &__table{
@@ -2615,7 +2623,7 @@ body{
 
   @media (max-width: 600px){
     &__news {
-      
+
       td{
         &:last-child{
           width: 170px;
@@ -2707,7 +2715,7 @@ body{
     width: 147px;
 
     &__item {
-  
+
       img{
         width: 132px;
         height: 132px;
@@ -2835,7 +2843,7 @@ body{
   }
 
   &__address {
-    
+
     p{
       width: 188px;
     }
@@ -2865,6 +2873,7 @@ body{
     font-size: 32px;
     font-weight: bold;
     margin: 0px 0px 15px 0px;
+    line-height: 44px;
   }
 
   &__helpers-text {
@@ -2901,7 +2910,7 @@ body{
     transition: all 0.4s;
 
     &:hover{
-      font-size: 28px;
+      font-size: 23px;
     }
   }
 
@@ -3050,6 +3059,13 @@ body{
   }
 
   &__body {
+    // min-width: 100%;
+    // display: flex;
+    // overflow-x: hidden;
+    // overflow-y: hidden;
+  }
+
+  &__body-scroll{
     min-width: 100%;
     display: flex;
     overflow-x: hidden;
@@ -3112,7 +3128,11 @@ body{
 
     padding: 0px 0px 0px 20px;
 
-    &__body{
+    // &__body{
+    //   overflow-x: scroll;
+    // }
+
+    &__body-scroll{
       overflow-x: scroll;
     }
 
@@ -3123,6 +3143,7 @@ body{
     &__item{
       flex-direction: column;
       min-width: 264px;
+      margin: 0px 0px 0px 16px;
     }
 
     &__img{
@@ -3198,15 +3219,22 @@ body{
     font-size: 22px;
     color: #101010;
     font-weight: normal;
-    line-height: 30px;
+    line-height: 33px;
   }
 
   &__subtitle {
     margin: 0px 0px 15px 0px;
     line-height: 67px;
+    height: 156px;
   }
 
   &__text {
+  }
+
+  @media (max-width: 1157px){
+    &__subtitle{
+      height: auto;
+    }
   }
 
   @media (max-width: 1024px){
@@ -3232,6 +3260,7 @@ body{
     &__subtitle{
       text-align: center;
       margin: 0px 0px 20px 0px;
+      height: auto;
     }
   }
 
@@ -3264,7 +3293,7 @@ body{
 
     &__item{
 
-      margin: 0px 0px 10px 0px;
+      margin: 0px 0px 20px 0px;
 
       &:first-child{
 
@@ -3290,7 +3319,7 @@ body{
   }
 
   @media (max-width: 480px){
-    
+
     &__container{
       padding: 0;
     }
@@ -3437,7 +3466,7 @@ body{
 }
 
 .tour {
-  padding: 59px 30px 0px 30px;
+  padding: 59px 0px 0px 0px;
 
   &__title {
     margin: 0px 0px 46px 0px;
@@ -3457,7 +3486,6 @@ body{
   @media (max-width: 768px){
     padding: 21px 0px 0px 0px;
     &__title {
-      padding: 0px 20px;
       margin: 0px 0px 22px 0px;
     }
   }
@@ -3583,7 +3611,7 @@ body{
       margin: 0px 0px 16px 0px;
       height: auto;
     }
-  
+
     &__body {
       font-size: 14px;
     }
@@ -3687,6 +3715,10 @@ body{
     display: block;
   }
 
+  &__video-main{
+    max-width: 100%;
+  }
+
   &__subtitle {
     margin: 26px 0px 10px 0px;
     font-size: 32px;
@@ -3761,9 +3793,9 @@ body{
     &__sidebar-container {
       width: 280px;
     }
-  
+
     &__sidebar-item {
-  
+
       img{
         width: 280px;
         height: 214px;
@@ -3821,7 +3853,7 @@ body{
     }
 
     &__sidebar-item {
-  
+
       img{
         width: 214px;
         height: 214px;
@@ -3835,8 +3867,20 @@ body{
       width: 132;
     }
 
+    &__sidebar-video{
+      iframe {
+        height: 132px;
+      }
+    }
+
+    &__video-main{
+      iframe {
+        height: 280px;
+      }
+    }
+
     &__sidebar-item {
-  
+
       img{
         width: 132px;
         height: 132px;
@@ -3888,6 +3932,15 @@ body{
     padding: 0px 10px;
     margin: 0px 0px 25px 0px;
 
+    &:hover{
+      .services-main__item-title{
+        &::before{
+          top: -35px;
+          left: 0px;
+        }
+      }
+    }
+
     @media (max-width: 619px){
       padding: 0;
     }
@@ -3903,10 +3956,10 @@ body{
   }
 
   &__item-title {
-    font-size: 32px;
+    font-size: 22px;
     font-weight: bold;
     line-height: 38px;
-    margin: 44px 0px 0px 0px;
+    margin: 16px 0px 0px 0px;
 
     @media(max-width: 768px){
       margin: 10px 0px 0px 0px;
@@ -4320,6 +4373,7 @@ body{
     font-size: 114px;
     max-width: 690px;
     margin: 0px 0px 100px 0px;
+    line-height: 131px;
 
     @media (max-width: 845px){
       font-size: 48px;
@@ -4511,13 +4565,14 @@ body{
 .multibrand {
   height: 725px;
   padding: 0px 0px 0px 36px;
+  position: relative;
+  overflow: hidden;
 
 		&__menu {
       display: flex;
       align-items: flex-start;
       justify-content: flex-start;
       height: 100%;
-      position: relative;
 
       @media (max-width: 768px){
         min-width: 100%;
@@ -4530,7 +4585,7 @@ body{
       padding: 105px 0px 0px 26px;
       flex: 0 1 23.888%;
       cursor: pointer;
-      position: relative;
+      // position: relative;
 
       &:hover{
 
@@ -4542,17 +4597,11 @@ body{
           display: inline-block;
         }
 
-        &::after{
-          content: '';
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          top: 0;
-          left: 0;
-          background: #FFFFFF;
-          opacity: 0.9;
-          z-index: 0;
+        .multibrand__menu-img{
+          visibility: visible !important;
         }
+
+        background:rgba(255,255,255,0.9);
       }
 
       &:first-child{
@@ -4568,6 +4617,8 @@ body{
             width: 0;
             height: 0;
           }
+
+          background: none;
 
           .multibrand__menu-title {
             font-weight: normal;
@@ -4598,11 +4649,12 @@ body{
       display: none;
       z-index: 2;
       margin: 15px 0px 15px 0px;
+      line-height: 25px;
 
       &::after{
         content: '';
         position: absolute;
-        top: 20px;
+        top: 25px;
         left: 0;
         width: 100%;
         height: 8px;
@@ -4612,9 +4664,9 @@ body{
         transition: all 0.4s;
 
           @media (max-width: 934px){
-            top: 35px;
+            top: 40px;
           }
-        }
+      }
 
       &:hover{
 
@@ -4623,8 +4675,30 @@ body{
         }
       }
 
+      &_visited{
+        color: #666666;
+
+        &::after{
+          content: '';
+          position: absolute;
+          top: 20px;
+          left: 0;
+          width: 100%;
+          height: 11px;
+          background: url('../img/arrow_services_visited.png') no-repeat;
+          background-size: 100% 100%;
+          -webkit-transition: all 0.4s;
+          transition: all 0.4s;
+
+            @media (max-width: 934px){
+              top: 35px;
+            }
+        }
+      }
+
       @media (max-width: 934px){
         width: 100px;
+        line-height: 20px;
       }
 
       @media (max-width: 768px){
@@ -4634,22 +4708,44 @@ body{
 
         &::after{
           background: url('../img/arrow_services_mob.png') no-repeat;
-          top: 19px;
+          top: 27px;
           left: 63px;
           width: 54px;
         }
 
         &:hover{
+          &::after{
+            left: 63px;
+          }
+        }
+
+        &_visited{
 
           &::after{
-            left: 0px;
+            background: url('../img/arrow_services_visited_mob.png') no-repeat;
+            top: 27px;
+            left: 63px;
+            width: 54px;
           }
         }
       }
 		}
 
-    @media (max-width: 1100px){
-      background-size: contain !important;
+    &__menu-img{
+
+      @media (max-width: 1024px){
+        background-position: center center !important;
+      }
+
+      @media (max-width: 768px){
+        background-position: bottom center !important;
+      }
+
+      @media (max-width: 575px){
+        background-position: bottom right !important;
+        bottom: 0 !important;
+        right: 0 !important;
+      }
     }
 
     @media (max-width: 899px){
@@ -4658,18 +4754,13 @@ body{
 
     @media (max-width: 768px){
       padding: 6px 0px 0px 0px;
-      height: 422px;
-      background-position: center 110px !important;
+      height: 500px;
     }
 
     @media (max-width: 575px){
-      background-position: center 165px !important;
+      height: 422px;
     }
 
-    @media (max-width: 480px){
-      background-position: 15px 215px !important;
-      background-size: 473px 163px !important;
-    }
 }
 
 .services-multi {
@@ -5094,7 +5185,7 @@ body{
   &__left-column {
     flex: 0 1 74.333%;
     min-width: 0;
-    
+
     @media (max-width: 992px){
       order: 2;
       width: 100%;
@@ -5186,7 +5277,7 @@ body{
       }
     }
   }
-  
+
   &__questions-header {
     display: flex;
     align-items: flex-start;
@@ -5245,7 +5336,7 @@ body{
     transition: all 0.4s;
 
     &:hover{
-      font-size: 28px;
+      font-size: 23px;
     }
   }
 
@@ -5327,7 +5418,7 @@ body{
     &__title {
       margin: 0px 0px 16px 0px;
     }
-  
+
     &__body {
       font-size: 14px;
     }
@@ -5525,7 +5616,7 @@ body{
   }
 
   &__left-column {
-    flex: 0 1 31.333%;
+    flex: 0 1 27.333%;
 
     @media (max-width: 1084px){
       width: 100%;
@@ -5587,7 +5678,7 @@ body{
 
   &__right-column {
     flex: 0 1 100%;
-    margin: 0px 0px 0px 34px;
+    margin: 0px 0px 0px 30px;
     position: relative;
 
     @media (max-width: 1084px){
@@ -5637,6 +5728,7 @@ body{
     width: 300px;
     padding: 6px 0px 0px 0px;
     font-size: 22px;
+    font-weight: normal;
 
     @media (max-width: 768px){
       font-size: 14px;
@@ -5724,10 +5816,6 @@ body{
       margin: 0;
     }
 
-    &:hover{
-      border: none;
-    }
-
     @media (max-width: 768px){
       width: 68px;
       height: 68px;
@@ -5747,14 +5835,14 @@ body{
         img{
           width: 17px;
           height: 31px;
-        }      
+        }
       }
 
       &:nth-child(2){
         img{
           width: 40px;
           height: 23px;
-        }  
+        }
       }
     }
   }
@@ -5860,7 +5948,7 @@ body{
       background-position-y: center;
     }
   }
-  
+
   &__info-sign {
     width: 137px;
     height: 47px;
@@ -6069,7 +6157,7 @@ body{
 
     &::after{
       content: url('../img/arrow-links-black.svg');
-    } 
+    }
   }
 
   &:visited{
@@ -6094,5 +6182,5 @@ body{
     position: relative;
     top: 6px;
     right: 0;
-  } 
+  }
 }
