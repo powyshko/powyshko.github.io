@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', e => {
   const garanteeQuestionsBodyAnimate = document.querySelectorAll('.garantee__questions-body');
   const indexParagraphyAnimate = document.querySelectorAll('.services-column__paragraphy-animate');
   const indexServicesBlockAnimate = document.querySelectorAll('.services-column__block');
+  const awardsAnimateIMG = document.querySelectorAll('.awards__img');
 
 
 //Анимация при клике на якорь
@@ -57,6 +58,12 @@ for(let i = 0; i < scrollLinks.length; i++){
     mobile: false,
   })
 
+  ScrollReveal().reveal(awardsAnimateIMG, {
+    scale: 0.5,
+    duration: 1000,
+    viewFactor: 0.3,
+    mobile: false,
+  })
 
   burger.addEventListener('click', onActiveMobileMenu);
 
