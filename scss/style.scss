@@ -301,9 +301,14 @@ body{
 
   @media (max-width: 575px){
     &__logo-img{
-      display: none;
+      // display: none;
       width: 78px;
       height: 39px;
+
+      &_size{
+        height: 39px;
+        width: auto;
+      }
     }
 
     &__logo-img-merc{
@@ -321,6 +326,10 @@ body{
       line-height: 11px;
       width: 102px;
       margin: 0px 0px 6px 11px;
+
+      &_margin{
+        margin: 0;
+      }
     }
 
     &__body{
@@ -1234,7 +1243,7 @@ body{
     }
 
     @media (max-width: 768px){
-      display: none;
+      pointer-events: none;
     }
   }
 
@@ -1392,11 +1401,20 @@ body{
       width: 152px;
       line-height: 20px;
       margin: 0px 0px 0px 11px;
+
+      &_margin{
+        margin: 0;
+      }
     }
 
     &__logo-img{
       width: 145px;
       height: 73px;
+    }
+
+    &__logo-img-mini_size{
+      width: 59px;
+      height: 59px;
     }
 
     &__contacts{
@@ -2593,9 +2611,6 @@ body{
         color: #353233;
       }
 
-      &:visited{
-        color: #C4C4C4;
-      }
     }
 
     td{
@@ -2750,12 +2765,6 @@ body{
   &:hover{
     .news-sim__item-title{
       text-decoration: underline;
-    }
-  }
-
-  &:visited{
-    .news-sim__item-title{
-      color: #666666;
     }
   }
 
@@ -6088,9 +6097,6 @@ body{
     text-decoration: underline;
   }
 
-  &:visited{
-    color: #C4C4C4;
-  }
 }
 
 .link-records-state{
@@ -6135,12 +6141,6 @@ body{
 
 .promo__block-state{
 
-  &:visited{
-    .promo__item-title{
-      color: #C4C4C4;
-    }
-  }
-
   &:active{
     .promo__item-title{
       color: #666666;
@@ -6158,10 +6158,6 @@ body{
     &::after{
       content: url('../img/arrow-links-black.svg');
     }
-  }
-
-  &:visited{
-    color: #C4C4C4;
   }
 
   &::after{
