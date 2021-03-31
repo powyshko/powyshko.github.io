@@ -1988,6 +1988,23 @@ body {
   }
 }
 
+@media (max-width: 425px) {
+  .teams__container {
+    width: 100%;
+  }
+  .teams__item {
+    width: 100%;
+  }
+  .teams__item-img {
+    position: static;
+    height: auto;
+    width: 100%;
+  }
+  .teams__name {
+    margin: 12px 0px 12px 0px;
+  }
+}
+
 .services {
   padding: 40px 0px 198px 0px;
 }
@@ -4874,6 +4891,34 @@ body {
   overflow: hidden;
 }
 
+.multibrand__bottom {
+  display: none;
+}
+
+@media (max-width: 575px) {
+  .multibrand__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 18px 0px 0px 0px;
+  }
+}
+
+.multibrand__bottom-triangle {
+  margin: 0px 0px 9px 0px;
+}
+
 .multibrand__menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4894,33 +4939,51 @@ body {
   }
 }
 
+.multibrand__menu-progress {
+  width: 42.3%;
+  height: 7px;
+  background: #EFEFEF;
+  margin: 0px 0px 57px 0px;
+}
+
+.multibrand__menu-progress_bg {
+  width: 0%;
+  height: 7px;
+  background: black;
+}
+
+@media (max-width: 899px) {
+  .multibrand__menu-progress {
+    margin: 0px 0px 51px 0px;
+  }
+}
+
+@media (max-width: 575px) {
+  .multibrand__menu-progress {
+    width: 59px;
+  }
+}
+
 .multibrand__menu-item {
   height: 100%;
-  padding: 105px 0px 0px 26px;
+  padding: 41px 0px 0px 26px;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 23.888%;
           flex: 0 1 23.888%;
   cursor: pointer;
 }
 
-.multibrand__menu-item:hover {
-  background: rgba(255, 255, 255, 0.9);
-}
-
-.multibrand__menu-item:hover .multibrand__menu-title {
-  font-weight: bold;
-}
-
-.multibrand__menu-item:hover .multibrand__menu-link {
-  display: inline-block;
-}
-
-.multibrand__menu-item:hover .multibrand__menu-img {
-  visibility: visible !important;
-}
-
 .multibrand__menu-item:first-child {
-  padding: 105px 0px 0px 0px;
+  padding: 41px 0px 0px 0px;
+}
+
+@media (max-width: 899px) {
+  .multibrand__menu-item {
+    padding: 139px 0px 0px 26px;
+  }
+  .multibrand__menu-item:first-child {
+    padding: 139px 0px 0px 0px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -4960,7 +5023,8 @@ body {
   font-size: 18px;
   font-weight: normal;
   color: #013874;
-  position: relative;
+  position: absolute;
+  bottom: 100px;
   display: none;
   z-index: 2;
   margin: 15px 0px 15px 0px;
@@ -5017,6 +5081,8 @@ body {
   .multibrand__menu-link {
     width: 100px;
     line-height: 20px;
+    position: relative;
+    bottom: 0;
   }
 }
 
@@ -5058,7 +5124,23 @@ body {
 @media (max-width: 575px) {
   .multibrand__menu-img {
     background-position: bottom right !important;
-    bottom: 0 !important;
+    bottom: 56px !important;
+    right: 0 !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .multibrand__menu-img {
+    background-position: bottom right !important;
+    bottom: 85px !important;
+    right: 0 !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .multibrand__menu-img {
+    background-position: bottom right !important;
+    bottom: 100px !important;
     right: 0 !important;
   }
 }
@@ -5066,20 +5148,38 @@ body {
 @media (max-width: 899px) {
   .multibrand {
     padding: 6px 0px 76px 0px;
-  }
-}
-
-@media (max-width: 768px) {
-  .multibrand {
-    padding: 6px 0px 0px 0px;
-    height: 500px;
+    height: 586px;
   }
 }
 
 @media (max-width: 575px) {
   .multibrand {
-    height: 422px;
+    height: 586px;
   }
+}
+
+.multibrand__menu-item.active {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 768px) {
+  .multibrand__menu-item.active {
+    background: none;
+  }
+}
+
+.multibrand__menu-item.active .multibrand__menu-title {
+  font-weight: bold;
+}
+
+.multibrand__menu-item.active
+.multibrand__menu-link {
+  display: inline-block;
+}
+
+.multibrand__menu-item.active
+.multibrand__menu-img {
+  visibility: visible !important;
 }
 
 .services-multi {
